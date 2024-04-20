@@ -1,6 +1,12 @@
+body {
+  height: 100%;
+  padding: 20px 20px;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 
 .left {
