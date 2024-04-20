@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: calc(50% - 10px); /* Adjust as needed */
+}
+
+.right {
+  width: calc(50% - 10px); /* Adjust as needed */
+}
+
+.left,
+.right {
+  height: 100%;
+}
+
+.code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+}

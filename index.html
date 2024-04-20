@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Runner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="code-container">
+          <textarea
+            id="code-input"
+            placeholder="Enter your HTML/CSS code here..."
+            spellcheck="false"
+          ></textarea>
+          <button id="run-button">Run</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="output-container">
+          <iframe id="output-frame"></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
