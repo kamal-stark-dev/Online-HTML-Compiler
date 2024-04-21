@@ -10,11 +10,11 @@ body {
 }
 
 .left {
-  width: calc(50% - 10px); /* Adjust as needed */
+  width: calc(50% - 10px);
 }
 
 .right {
-  width: calc(50% - 10px); /* Adjust as needed */
+  width: calc(50% - 10px);
 }
 
 .left,
@@ -55,4 +55,26 @@ iframe {
   .right {
     margin-top: 16px;
   }
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
 }
