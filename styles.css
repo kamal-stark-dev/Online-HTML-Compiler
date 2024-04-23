@@ -48,22 +48,6 @@ iframe {
   border: 1px solid #ccc;
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .left,
-  .right {
-    width: 100%;
-    height: 100%;
-  }
-
-  .right {
-    margin-top: 16px;
-  }
-}
-
 /* NAVBAR */
 nav {
   display: flex;
@@ -89,4 +73,28 @@ nav a {
 
 nav .logo {
   font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav .logo {
+    font-size: 18px;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right {
+    margin-top: 18px;
+  }
 }
