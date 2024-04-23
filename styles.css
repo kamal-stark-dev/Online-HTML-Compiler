@@ -9,45 +9,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.left {
-  width: calc(50% - 10px);
-}
-
-.right {
-  width: calc(50% - 10px);
-}
-
-.left,
-.right {
-  height: 100%;
-}
-
-.code-container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-textarea {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 10px;
-  resize: none;
-  font-family: "Source Code Pro", monospace;
-}
-
-iframe {
-  width: 100%;
-  height: 300px;
-  border: 1px solid #ccc;
-}
-
 /* NAVBAR */
 nav {
   display: flex;
@@ -73,6 +34,60 @@ nav a {
 
 nav .logo {
   font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.left {
+  width: calc(50% - 10px);
+}
+
+.right {
+  width: calc(50% - 10px);
+}
+
+.left,
+.right {
+  height: 100%;
+}
+
+#run-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#run-button:hover {
+  background-color: #444;
+}
+
+.code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 8px;
+  margin-bottom: 10px;
+  resize: none;
+  font-family: "Source Code Pro", monospace;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
 }
 
 @media (max-width: 768px) {
