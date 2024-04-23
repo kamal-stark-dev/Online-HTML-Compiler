@@ -86,3 +86,7 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+
+nav .logo {
+  font-size: 24px;
+}
