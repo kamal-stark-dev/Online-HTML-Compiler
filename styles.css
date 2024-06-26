@@ -3,113 +3,16 @@
 /* Source Code Pro */
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  height: 100%;
-  padding: 20px 20px;
   font-family: "Poppins", sans-serif;
-}
-
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  margin-bottom: 8px;
-}
-
-nav .nav-links {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  align-items: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav .logo {
-  font-size: 24px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.left {
-  width: calc(50% - 10px);
-}
-
-.right {
-  width: calc(50% - 10px);
-}
-
-.left,
-.right {
-  height: 100%;
-}
-
-#run-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-#run-button:hover {
-  background-color: #444;
-}
-
-.code-container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-textarea {
-  width: 100%;
-  height: 200px;
-  padding: 8px;
-  margin-bottom: 10px;
-  resize: none;
-  font-family: "Source Code Pro", monospace;
-}
-
-iframe {
-  width: 100%;
-  height: 300px;
-  border: 1px solid #ccc;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  nav .logo {
-    font-size: 18px;
-  }
-
-  nav .nav-links {
-    display: none;
-  }
-
-  .left,
-  .right {
-    width: 100%;
-    height: 100%;
-  }
-
-  .right {
-    margin-top: 18px;
-  }
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
 }

@@ -26,6 +26,7 @@ document
     }
   });
 
+// Function to run the code
 function runCode() {
   var code = document.getElementById("code-input").value;
   var iframe = document.getElementById("output-frame");

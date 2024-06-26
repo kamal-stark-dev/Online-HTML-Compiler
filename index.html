@@ -4,34 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Runner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav>
-      <div class="logo">Code Runner &lt;/&gt;</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <h1 class="logo">Code Runner &lt;/&gt;</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-    <div class="container">
-      <div class="left">
-        <div class="code-container">
+
+    <main>
+      <div class="container">
+        <div class="code-section">
+          <div class="filebar">
+            <div class="file active">
+              <span class="file-name">index.html</span>
+              <i class="ri-close-large-line"></i>
+            </div>
+            <div class="file">
+              <span class="file-name">stle.css</span>
+              <i class="ri-close-large-line"></i>
+            </div>
+            <div class="file">
+              <span class="file-name">script.js</span>
+              <i class="ri-close-large-line"></i>
+            </div>
+          </div>
           <textarea
             id="code-input"
             placeholder="Enter your HTML/CSS code here..."
             spellcheck="false"
           ></textarea>
-          <button id="run-button">Run &gt;&gt;</button>
+          <button id="run-button">
+            Run <i class="ri-arrow-right-double-line"></i>
+          </button>
         </div>
-      </div>
-      <div class="right">
-        <div class="output-container">
+
+        <div class="output-section">
           <iframe id="output-frame"></iframe>
         </div>
       </div>
-    </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2021 Code Runner. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
