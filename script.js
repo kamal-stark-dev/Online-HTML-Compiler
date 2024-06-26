@@ -1,10 +1,28 @@
 document.getElementById("run-button").addEventListener("click", runCode);
 
+// Ctrl + Enter key functionality
 document
   .getElementById("code-input")
   .addEventListener("keydown", function (event) {
     if (event.ctrlKey && event.key === "Enter") {
       runCode();
+    }
+  });
+
+// Tab key functionality
+document
+  .getElementById("code-input")
+  .addEventListener("keydown", function (event) {
+    if (event.key === "Tab") {
+      event.preventDefault();
+      var textarea = event.target;
+      var start = textarea.selectionStart;
+      var end = textarea.selectionEnd;
+      textarea.value =
+        textarea.value.substring(0, start) +
+        "\t" +
+        textarea.value.substring(end);
+      textarea.selectionStart = textarea.selectionEnd = start + 1;
     }
   });
 
