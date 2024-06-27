@@ -4,18 +4,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
-  --background-light: #d9d9d9;
-  --background-dark: #3c3c3c;
-  --codeblock-light: #fff;
-  --codeblock-dark: #222;
-  --runbtn-light: #222;
-  --runbtn-dark: #3c3c3c;
-  --filebar-light: #222;
-  --filebar-dark: #141414;
+  --background: #d9d9d9;
+  --codeblock: #fff;
+  --runbtn: #222;
+  --filebar: #222;
   --file-color: #3c3c3c;
   --file-text-active-color: #fff;
   --file-text-color: #d9d9d9;
   --header-bg: #222;
+  --highlight: #569bf4;
+}
+
+.dark-mode {
+  --background: #3c3c3c;
+  --codeblock: #222;
+  --runbtn: #3c3c3c;
+  --filebar: #141414;
+  /* --file-color: #3c3c3c;
+  --file-text-active-color: #fff;
+  --file-text-color: #d9d9d9;
+  --header-bg: #222; */
 }
 
 * {
@@ -30,4 +38,30 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
+}
+
+nav {
+  background-color: var(--header-bg);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+nav ul .active {
+  color: var(--highlight);
+  text-decoration-line: underline;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+nav ul a:hover {
+  color: var(--highlight);
 }
