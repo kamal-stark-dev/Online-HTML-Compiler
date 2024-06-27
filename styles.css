@@ -78,9 +78,6 @@ nav ul a:hover {
 }
 
 /* Main */
-/* main {
-  width: 100vw;
-} */
 main .container {
   display: flex;
   gap: 1rem;
@@ -92,7 +89,7 @@ main .container {
   width: 100%;
   height: 100%;
   background-color: var(--codeblock);
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 0.5rem;
   overflow-x: auto;
 }
@@ -101,5 +98,33 @@ main .container {
   width: 100%;
   height: 100%;
   background-color: #fff;
+}
+.output-section iframe {
   overflow-x: auto;
+  border: none;
+}
+
+/* Main - File Bar */
+.filebar {
+  background-color: var(--filebar);
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  padding: 12px 12px 0 12px;
+  color: var(--file-text-color);
+}
+.filebar .file {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  background-color: var(--file-color);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.filebar .file.active {
+  color: var(--file-text-active-color);
 }
