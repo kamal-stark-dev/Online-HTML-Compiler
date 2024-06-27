@@ -20,6 +20,7 @@
   --codeblock: #222;
   --runbtn: #3c3c3c;
   --filebar: #141414;
+  --highlight: yellow;
   /* --file-color: #3c3c3c;
   --file-text-active-color: #fff;
   --file-text-color: #d9d9d9;
@@ -50,6 +51,7 @@ nav {
 }
 nav ul {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 1rem;
 }
@@ -63,5 +65,13 @@ nav a {
   transition: all 0.15s ease-in-out;
 }
 nav ul a:hover {
+  color: var(--highlight);
+}
+#change-mode {
+  cursor: pointer;
+  font-size: 22px;
+  transition: all 0.15s ease-in-out;
+}
+#change-mode:hover {
   color: var(--highlight);
 }

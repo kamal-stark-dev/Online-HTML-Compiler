@@ -40,3 +40,11 @@ function runCode() {
   newDoc.write(code);
   newDoc.close();
 }
+
+// Change Mode
+var change_mode = document.getElementById("change-mode");
+
+change_mode.onclick = function () {
+  change_mode.classList.toggle("ri-sun-line");
+  document.body.classList.toggle("dark-mode");
+};
