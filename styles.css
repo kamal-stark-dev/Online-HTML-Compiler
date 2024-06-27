@@ -3,6 +3,21 @@
 /* Source Code Pro */
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+:root {
+  --background-light: #d9d9d9;
+  --background-dark: #3c3c3c;
+  --codeblock-light: #fff;
+  --codeblock-dark: #222;
+  --runbtn-light: #222;
+  --runbtn-dark: #3c3c3c;
+  --filebar-light: #222;
+  --filebar-dark: #141414;
+  --file-color: #3c3c3c;
+  --file-text-active-color: #fff;
+  --file-text-color: #d9d9d9;
+  --header-bg: #222;
+}
+
 * {
   margin: 0;
   padding: 0;
