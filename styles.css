@@ -6,7 +6,8 @@
 :root {
   --background: #d9d9d9;
   --code-color: #222;
-  --codeblock: #fff;
+  --codeblock: #ffffff;
+  --output-block: #fff;
   --runbtn: #222;
   --filebar: #222;
   --highlight: #569bf4;
@@ -20,6 +21,7 @@
   --background: #3c3c3c;
   --code-color: #ccc;
   --codeblock: #222;
+  --output-block: #fff;
   --runbtn: #3c3c3c;
   --filebar: #141414;
   --highlight: yellow;
@@ -41,7 +43,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: var(--background);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Header */
@@ -100,11 +102,11 @@ main .container {
 .output-section iframe {
   width: 100%;
   height: 100%;
-  background-color: #fff;
 }
 .output-section iframe {
   overflow-x: auto;
   border: none;
+  background-color: var(--output-block);
 }
 
 /* Main - File Bar */
@@ -174,7 +176,7 @@ main .container {
 footer {
   background-color: var(--header-bg);
   color: #fff;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;

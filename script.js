@@ -41,12 +41,37 @@ function runCode() {
 }
 
 // Change Mode
-var change_mode = document.getElementById("change-mode");
+// var change_mode = document.getElementById("change-mode");
 
-change_mode.onclick = function () {
-  change_mode.classList.toggle("ri-sun-line");
+// change_mode.onclick = function () {
+//   change_mode.classList.toggle("ri-sun-line");
+//   document.body.classList.toggle("dark-mode");
+// };
+
+// Function to toggle dark mode
+function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
-};
+  var isDarkMode = document.body.classList.contains("dark-mode");
+  localStorage.setItem("darkMode", isDarkMode);
+}
+
+// Event listener for dark mode toggle button/icon
+document.getElementById("change-mode").addEventListener("click", function () {
+  toggleDarkMode();
+  document.getElementById("change-mode").classList.toggle("ri-sun-line");
+});
+
+// Check if dark mode preference is stored in localStorage
+document.addEventListener("DOMContentLoaded", function () {
+  var darkMode = localStorage.getItem("darkMode");
+
+  // Apply dark mode if it was set
+  if (darkMode === "true") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
+});
 
 // Going to end of line on clicking whitespaces afterwards
 function handleTextInsertion(textarea, insertion) {
