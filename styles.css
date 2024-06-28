@@ -144,6 +144,7 @@ main .container {
   padding: 1rem;
   font-family: "Source Code Pro", monospace;
   font-size: 1rem;
+  text-wrap: wrap;
   color: var(--code-color);
   background-color: var(--codeblock);
   border: none;
