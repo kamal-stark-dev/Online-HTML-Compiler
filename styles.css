@@ -41,6 +41,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: var(--background);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Header */
@@ -85,7 +86,7 @@ main .container {
   gap: 1rem;
   padding: 1rem;
   width: 100%;
-  height: 636px;
+  height: 624px;
 }
 .code-section {
   width: 100%;
@@ -125,7 +126,7 @@ main .container {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  transition: all 0.15s ease-in-out;
+  /* transition: all 0.15s ease-in-out; */
 }
 .filebar .file.active {
   font-weight: 600;
@@ -167,4 +168,28 @@ main .container {
 }
 #run-button:hover {
   opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background-color: var(--header-bg);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .socials {
+  display: flex;
+  gap: 1rem;
+}
+footer a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
 }

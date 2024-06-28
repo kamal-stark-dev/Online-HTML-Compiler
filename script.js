@@ -1,5 +1,3 @@
-document.getElementById("run-button").addEventListener("click", runCode);
-
 // Ctrl + Enter key functionality
 document
   .getElementById("code-input")

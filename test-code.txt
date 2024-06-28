@@ -1,0 +1,7 @@
+<h2>Kamal Stark Beats Elon Musk's Net  Worth</h2>
+<img src="https://th.bing.com/th/id/OIP.ea3N03TdLFxxIhwYdbFbkQHaJw?w=200&h=264&c=7&r=0&o=5&dpr=1.1&pid=1.7" style="width:250px;height:250px; object-fit:cover;"></img>
+<span style="position:absolute;top:160px;">V/S</span>
+<img src="https://www.bing.com/th?id=OIP.k5mBS4TCgV1jk-4IvWjySAHaFj&w=202&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" style="width:250px;height:250px; object-fit:cover;margin-left:30px;"></img>
+<br>
+<span style="margin-right:200px;">Kamal Stark</span>
+<span>Elon Musk</span>
