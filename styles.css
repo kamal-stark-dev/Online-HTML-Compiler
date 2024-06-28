@@ -5,24 +5,26 @@
 
 :root {
   --background: #d9d9d9;
+  --code-color: #222;
   --codeblock: #fff;
   --runbtn: #222;
   --filebar: #222;
+  --highlight: #569bf4;
   --file-color: #3c3c3c;
-  --file-text-active-color: #fff;
+  --file-text-active-color: #000;
   --file-text-color: #d9d9d9;
   --header-bg: #222;
-  --highlight: #569bf4;
 }
 
 .dark-mode {
   --background: #3c3c3c;
+  --code-color: #ccc;
   --codeblock: #222;
   --runbtn: #3c3c3c;
   --filebar: #141414;
   --highlight: yellow;
-  /* --file-color: #3c3c3c;
   --file-text-active-color: #fff;
+  /* --file-color: #3c3c3c;
   --file-text-color: #d9d9d9;
   --header-bg: #222; */
 }
@@ -119,12 +121,49 @@ main .container {
   padding: 0.4rem 0.8rem;
   border-radius: 0.5rem 0.5rem 0 0;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
   background-color: var(--file-color);
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  transition: all 0.15s ease-in-out;
 }
 .filebar .file.active {
+  font-weight: 600;
   color: var(--file-text-active-color);
+  background-color: var(--codeblock);
+}
+.filebar .file:hover:not(.active) span {
+  color: var(--highlight);
+}
+.code-section {
+  position: relative;
+}
+.code-section textarea {
+  width: 100%;
+  height: 90%;
+  padding: 1rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  color: var(--code-color);
+  background-color: var(--codeblock);
+  border: none;
+  /* border-radius: 0.5rem; */
+  resize: none;
+  outline: none;
+}
+#run-button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  padding: 1rem 1.5rem;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--runbtn);
+  border: none;
+  border-radius: 0.4rem;
+}
+#run-button:hover {
+  opacity: 0.9;
 }
