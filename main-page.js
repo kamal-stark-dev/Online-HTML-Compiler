@@ -64,3 +64,20 @@ function handleTextInsertion(textarea, insertion) {
   // Move cursor position forward by the length of the inserted text
   textarea.selectionStart = textarea.selectionEnd = start + insertion.length;
 }
+
+// Saving the code to local storage
+document
+  .getElementById("code-input")
+  .addEventListener("input", function (event) {
+    localStorage.setItem("code", event.target.value);
+  });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Retrieve the saved code from local storage
+  const savedCode = localStorage.getItem("code");
+
+  // If there is saved code, set it as the value of the input field
+  if (savedCode !== null) {
+    document.getElementById("code-input").value = savedCode;
+  }
+});
