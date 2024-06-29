@@ -8,22 +8,23 @@ document
   });
 
 // Tab key functionality
-var space = "   ";
-document
-  .getElementById("code-input")
-  .addEventListener("keydown", function (event) {
-    if (event.key === "Tab") {
-      event.preventDefault();
-      var textarea = event.target;
-      var start = textarea.selectionStart;
-      var end = textarea.selectionEnd;
-      textarea.value =
-        textarea.value.substring(0, start) +
-        space +
-        textarea.value.substring(end);
-      textarea.selectionStart = textarea.selectionEnd = start + 1;
-    }
-  });
+const $textarea = document.getElementById("code-input");
+
+const space = "    ";
+
+$textarea.addEventListener("keydown", (e) => {
+  if (e.key === "Tab") {
+    e.preventDefault();
+    const textarea = e.target;
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    textarea.value =
+      textarea.value.substring(0, start) +
+      space +
+      textarea.value.substring(end);
+    textarea.selectionStart = textarea.selectionEnd = start + space.length;
+  }
+});
 
 // Function to run the code
 function runCode() {

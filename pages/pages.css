@@ -1,0 +1,15 @@
+:root {
+  --border: #123661;
+}
+.dark-mode {
+  --border: #2bf691;
+}
+
+.holder {
+  margin: 1rem;
+  padding: 0;
+}
+.holder h2 {
+  font-size: 2rem;
+  margin: 0.4rem 1rem;
+}
